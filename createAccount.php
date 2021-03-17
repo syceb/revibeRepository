@@ -37,12 +37,12 @@ if(isset($_POST['submitUser'])){
    $data['pwd'] = password_hash($_POST['givenPassword'].$added, PASSWORD_BCRYPT);
    try {
     //***Email ei saa olla käytetty aiemmin
-    $sql = "SELECT COUNT(*) FROM wsk6_user where userEmail =  " . "'".$_POST['givenEmail']."'"  ;
+    $sql = "SELECT COUNT(*) FROM users where userEmail =  " . "'".$_POST['givenEmail']."'"  ;
     $kysely=$DBH->prepare($sql);
     $kysely->execute();				
     $tulos=$kysely->fetch();
     if($tulos[0] == 0){ //email ei ole käytössä
-     $STH = $DBH->prepare("INSERT INTO wsk6_user (userName, userEmail, userPwd) VALUES (:name, :email, :pwd);");
+     $STH = $DBH->prepare("INSERT INTO users (userName, userEmail, userPwd) VALUES (:name, :email, :pwd);");
      $STH->execute($data);
      header("Location: index.php"); //Palataan pääsivulle kirjautuneena
     }else{
