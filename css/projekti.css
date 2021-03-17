@@ -1,0 +1,42 @@
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+nav{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color:  #FF8D0D;
+  padding: 12px;
+}
+ol{
+  font-style: italic;
+  list-style-type: lower-roman;
+}
+a{
+  padding-left: 20px;
+}
+tr{
+  background-color: peru;
+  border: red;
+}
+td{
+  background-color:moccasin ;
+  border: red;
+}
+.warning{
+color: red;
+font-weight: bold;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
