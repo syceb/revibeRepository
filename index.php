@@ -18,7 +18,7 @@
  //kirjautuneen käyttäjän userID???
     $data1['email'] = $_SESSION['suserEmail'];
     //var_dump($data1);
-    $sql1 = "SELECT userID FROM users where userEmail =  :email";
+    $sql1 = "SELECT userID FROM wsk6_user where userEmail =  :email";
     $kysely1=$DBH->prepare($sql1);
     $kysely1->execute($data1);
     $tulos1=$kysely1->fetch();

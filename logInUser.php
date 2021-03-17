@@ -14,7 +14,7 @@ if(isset($_POST['submitUser'])){
      try {
       //Tiedot kannasta, hakuehto
       $data['email'] = $_POST['givenEmail'];
-      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM wsk6_user WHERE userEmail = :email;");
+      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM users WHERE userEmail = :email;");
       $STH->execute($data);
       $STH->setFetchMode(PDO::FETCH_OBJ);
       $tulosOlio=$STH->fetch();
@@ -31,10 +31,10 @@ if(isset($_POST['submitUser'])){
               $_SESSION['suserEmail']=$tulosOlio->userEmail;
               header("Location: index.php"); //Palataan pääsivulle kirjautuneena
           }else{
-            $_SESSION['swarningInput']="Wrong password";
+            $_SESSION['swarningInput']="Väärä salasana";
           }
       }else{
-        $_SESSION['swarningInput']="Wrong email";
+        $_SESSION['swarningInput']="Väärä sähköpostiosoite";
       }
      } catch(PDOException $e) {
         file_put_contents('log/DBErrors.txt', 'signInUser.php: '.$e->getMessage()."\n", FILE_APPEND);

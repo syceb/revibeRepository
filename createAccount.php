@@ -27,22 +27,23 @@ if(isset($_POST['submitUser'])){
   
   //Tiedot kantaan
    $data['name'] = $_POST['givenName'];
+   $data['surname'] = $_POST['givenSurname'];
    $data['email'] = $_POST['givenEmail'];
    $data['age'] = $_POST['givenAge'];
    $data['weight'] = $_POST['givenWeight'];
    $data['height'] = $_POST['givenHeight'];
    $data['gender'] = $_POST['givenGender'];
-   $data['surname'] = $_POST['givenSurname'];
+   
   //suolataan annettua salasanaa
    $data['pwd'] = password_hash($_POST['givenPassword'].$added, PASSWORD_BCRYPT);
    try {
     //***Email ei saa olla käytetty aiemmin
-    $sql = "SELECT COUNT(*) FROM users where userEmail =  " . "'".$_POST['givenEmail']."'"  ;
+    $sql = "SELECT COUNT(*) FROM wsk6_user where userEmail =  " . "'".$_POST['givenEmail']."'"  ;
     $kysely=$DBH->prepare($sql);
     $kysely->execute();				
     $tulos=$kysely->fetch();
     if($tulos[0] == 0){ //email ei ole käytössä
-     $STH = $DBH->prepare("INSERT INTO users (userName, userEmail, userPwd) VALUES (:name, :email, :pwd);");
+     $STH = $DBH->prepare("INSERT INTO wsk6_user (userName, userSurname, userEmail, userAge, userWeight, userHeight, userGender, userPwd) VALUES (:name, :surname, :email, :age, :weight, :height, :gender, :pwd);");
      $STH->execute($data);
      header("Location: index.php"); //Palataan pääsivulle kirjautuneena
     }else{
