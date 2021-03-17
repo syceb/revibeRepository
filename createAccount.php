@@ -28,6 +28,11 @@ if(isset($_POST['submitUser'])){
   //Tiedot kantaan
    $data['name'] = $_POST['givenName'];
    $data['email'] = $_POST['givenEmail'];
+   $data['age'] = $_POST['givenAge'];
+   $data['weight'] = $_POST['givenWeight'];
+   $data['height'] = $_POST['givenHeight'];
+   $data['gender'] = $_POST['givenGender'];
+   $data['surname'] = $_POST['givenSurname'];
   //suolataan annettua salasanaa
    $data['pwd'] = password_hash($_POST['givenPassword'].$added, PASSWORD_BCRYPT);
    try {
