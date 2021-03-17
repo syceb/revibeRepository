@@ -6,7 +6,7 @@
 
 
 <?php
-//Lomakkeen submit painettu?
+//Lomakkeen submit painettu???
 if(isset($_POST['submitUser'])){
   //***Tarkistetaan syötteet myös palvelimella
   if(strlen($_POST['givenName'])<1){
