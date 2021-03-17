@@ -7,7 +7,7 @@ if($_SESSION['sloggedIn']=="yes"){
     echo(" ** <a href=\"logOutUser.php\">Log out</a></p>");
 }else{
     ?>
-    <a href="createAccount.php">Create account</a> <a href="logInUser.php">Log in</a>
+    <a href="createAccount.php">Luo käyttäjätunnus</a> <a href="logInUser.php">Kirjaudu sisään</a>
     <?php
 }
 ?>

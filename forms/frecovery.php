@@ -1,13 +1,13 @@
-<fieldset><legend>Daily pain level description</legend>
+<fieldset><legend>Päivittäinen kiputaso</legend>
 <form method="post">
   <p>
-   Daily feeling
+   Päivittäinen fiilis
   <br />  
   <textarea rows = "2" cols = "50" name = "givenDescription"></textarea>
   </p><p>
   
   <img src="images/pain_scale.png" alt="pain scale" width="20%"/>
-  </p><p>Pain today
+  </p><p>Kipu tänään
   <select name="givenPain">
   <option value="0">0 - no pain</option>
   <option value="1">1 - mild</option>
@@ -22,8 +22,8 @@
   <option value="10">10 - worst possible</option>
 </select>
   </p><p>
-  <br />  <input type="submit" name="submitRecovery" value="Submit"/>
-          <input type="reset"  value="Reset"/>
+  <br />  <input type="submit" name="submitRecovery" value="Lähetä"/>
+          <input type="reset"  value="Resetoi"/>
    </p>
 </form>
 </fieldset>

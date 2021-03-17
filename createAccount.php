@@ -22,11 +22,11 @@ if(isset($_POST['submitUser'])){
  
   //***Tiedot sessioon - annettu oikeanlaisena
    $_SESSION['sloggedIn']="yes";
-   $_SESSION['suserName']=$_POST['givenUsername'];
+   $_SESSION['suserName']=$_POST['givenName'];
    $_SESSION['suserEmail']= $_POST['givenEmail'];
   
   //Tiedot kantaan
-   $data['name'] = $_POST['givenUsername'];
+   $data['name'] = $_POST['givenName'];
    $data['email'] = $_POST['givenEmail'];
   //suolataan annettua salasanaa
    $data['pwd'] = password_hash($_POST['givenPassword'].$added, PASSWORD_BCRYPT);

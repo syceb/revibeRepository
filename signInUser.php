@@ -7,14 +7,14 @@
 
 <?php
 //***Tarkistetaan syötteet myös palvelimella
-if(!strlen($_POST['givenName'])>=4){
-   $_SESSION['swarningInput']="Illegal username (min 4 chars)";
+if(!strlen($_POST['givenName'])>=1){
+   $_SESSION['swarningInput']="Liian lyhyt etunimi";
 }else if(!filter_var($_POST['givenEmail'], FILTER_VALIDATE_EMAIL)){
   $_SESSION['swarningInput']="Illegal email";
-}else if(!strlen($_POST['givenPassword'])>=8){
-  $_SESSION['swarningInput']="Illegal password (min 8 chars)";
+}else if(!strlen($_POST['givenPassword'])>=4){
+  $_SESSION['swarningInput']="Liian lyhyt salasana (min 4 merkkiä)";
 }else if(!$_POST['givenPassword']== $_POST['givenPasswordVerify']){
-  $_SESSION['swarningInput']="Given password and verified not same";
+  $_SESSION['swarningInput']="Salasanat eivät täsmää";
 }else{
   unset($_SESSION['swarningInput']);
  
@@ -39,7 +39,7 @@ if(!strlen($_POST['givenName'])>=4){
      $STH->execute($data);
      header("Location: index.php"); //Palataan pääsivulle kirjautuneena
     }else{
-      $_SESSION['swarningInput']="Email is reserved";
+      $_SESSION['swarningInput']="Sähköposti on varattu";
     }
   } catch(PDOException $e) {
     file_put_contents('log/DBErrors.txt', 'signInUser.php: '.$e->getMessage()."\n", FILE_APPEND);

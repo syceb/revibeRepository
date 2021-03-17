@@ -6,9 +6,9 @@ session_start();
 <!DOCTYPE html> 
 <html  lang="fi-FI">
 <head>
-<title> Lab5: Lomakkeet ja sessio</title>
+<title> Revibe</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/lab6.css">
+<link rel="stylesheet" type="text/css" href="css/projekti.css">
 </head>
 <body>
 <nav>
@@ -16,7 +16,7 @@ session_start();
 
 
 //Käyttäjän tila
-echo("<h2>Recovery diary</h2>");
+echo("<h2>Päiväkirja</h2>");
 if($_SESSION['loggedIn']=="yes"){
     echo("Logged in: " .$_SESSION['userName']);
 }

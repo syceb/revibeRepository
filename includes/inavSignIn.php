@@ -1,6 +1,6 @@
 <nav>
 <?php
 //Käyttäjän tila
-echo("<h1>Recovery diary - Sign in</h1>");
+echo("<h1>Revibe - Kirjaudu sisään</h1>");
 ?>
 </nav>

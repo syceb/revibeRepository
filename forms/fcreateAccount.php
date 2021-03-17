@@ -29,9 +29,9 @@
   <!-- Salasana uudelleen: -->
   <br />  <input type="password" name="givenPasswordVerify" placeholder="Salasana uudelleen" maxlength="40"/>
   </p><p>
-  <br />  <input type="submit" name="submitUser" value="Luo tili"/>
+  <br />  <input type="submit" name="submitUser" value="Luo käyttäjätunnus"/>
           <input type="reset"  value="Tyhjennä"/>
-          <input type="submit" name="submitBack" value="Give Up"/>
+          <input type="submit" name="submitBack" value="Palaa takaisin"/>
   </p>
 </form>
 </fieldset>
