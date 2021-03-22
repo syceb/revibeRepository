@@ -1,10 +1,10 @@
 <fieldset><legend>Kirjautuminen</legend>
 <form method="post">
   <p>
-  Email 
+  Sähköpostiosoite 
   <br />  <input type="text" name="givenEmail" placeholder="Sähköpostiosoite" maxlength="40"/>
   </p><p>
-  Password 
+  Salasana 
   <br />  <input type="password" name="givenPassword" placeholder="Salasana" maxlength="40"/>
   </p><p>
   <br />  <input type="submit" name="submitUser" value="Kirjaudu"/>
