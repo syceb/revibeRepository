@@ -38,7 +38,7 @@ if(isset($_POST['submitUser'])){
       }
      } catch(PDOException $e) {
         file_put_contents('log/DBErrors.txt', 'signInUser.php: '.$e->getMessage()."\n", FILE_APPEND);
-        $_SESSION['swarningInput'] = 'Database problem';
+        $_SESSION['swarningInput'] = '';
     }
   }
 }
