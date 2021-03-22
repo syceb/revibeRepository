@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html> 
 <html  lang="fi-FI">
 <head>
-<title> Revibe</title>
+<title> revibe</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/projekti.css">
 </head>

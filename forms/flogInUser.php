@@ -1,4 +1,4 @@
-<fieldset><legend>Logging information</legend>
+<fieldset><legend>Kirjautuminen</legend>
 <form method="post">
   <p>
   Email 

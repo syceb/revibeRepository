@@ -5,7 +5,7 @@
 <?php
   if(!isset($_SESSION['sloggedIn'])){
 ?>
-    <img class="center" src="images/pain.png" alt="Pain"/>
+    <img class="center" src="images/doc.jpg" alt="tohtori"/>
 <?php
   }else{
   //Lomake päiväkirjamerkinnällee

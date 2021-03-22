@@ -7,7 +7,7 @@ nav{
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  background-color:  #FF8D0D;
+  background-color:  #b44fa3;
   padding: 12px;
 }
 ol{
@@ -18,12 +18,12 @@ a{
   padding-left: 20px;
 }
 tr{
-  background-color: peru;
-  border: red;
+  background-color: rgb(210, 159, 214);
+  border: rgb(0, 0, 0);
 }
 td{
-  background-color:moccasin ;
-  border: red;
+  background-color:rgb(223, 114, 199) ;
+  border: rgb(0, 0, 0);
 }
 .warning{
 color: red;

@@ -6,7 +6,7 @@
   <textarea rows = "2" cols = "50" name = "givenDescription"></textarea>
   </p><p>
   
-  <img src="images/pain_scale.png" alt="pain scale" width="20%"/>
+  <img src="images/doc.jpg" alt="tohtori" width="20%"/>
   </p><p>Kipu tänään
   <select name="givenPain">
   <option value="0">0 - no pain</option>

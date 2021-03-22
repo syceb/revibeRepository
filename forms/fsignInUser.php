@@ -1,4 +1,4 @@
-<fieldset><legend>User information</legend>
+<fieldset><legend>Käyttäjätiedot</legend>
 <form method="post">
   <p><!--Etunimi: -->
   <br /> <input type="text" name="givenName" placeholder="Etunimi" maxlength="40"/>
