@@ -1,3 +1,11 @@
+:root{
+  --white:#F9F9F9;
+  --purple:#B494CA;
+  --black: #4B4B4B;
+}
+body {
+  background-color: var(--white);
+}
 footer{
     text-align: center;
     font-size: 14px;
@@ -7,7 +15,7 @@ nav{
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  background-color: #B494CA;
+  background-color: var(--purple);
   padding: 12px;
 }
 ol{
