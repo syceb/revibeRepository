@@ -5,17 +5,20 @@
 }
 body {
   background-color: var(--white);
+  margin: 0;
+	padding: 0;
+	border: 0;
 }
 footer{
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     padding: 10px;
 }
 nav{
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  background-color: var(--purple);
+  background-color: var(--white);
   padding: 12px;
 }
 ol{
@@ -43,6 +46,18 @@ font-weight: bold;
   margin-right: auto;
   width: 50%;
 }
+.header{
+  background-color: #B494CA;
+  border-radius: 0px 0px 0px 100px;
+}
+.relax{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
 
 
 

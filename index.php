@@ -1,19 +1,22 @@
 <?php include("includes/iheader.php");?>
 
-<?php include("includes/inavIndex.php"); ?>
+
 
 <?php
   if(!isset($_SESSION['sloggedIn'])){
 ?>
-    <img class="center" src="images/doc.jpg" alt="tohtori"/>
+    <img class="relax" src="images/relax.png" alt="lepo"/>
 <?php
   }else{
   //Lomake päiväkirjamerkinnällee
   include("forms/frecovery.php");
+  
+  
 
   
 
 ?>
+
 <?php
  //kirjautuneen käyttäjän userID???
     $data1['email'] = $_SESSION['suserEmail'];
@@ -63,5 +66,5 @@ $kysely3->execute($data3);
   echo("</table>");
   }
 ?>
-
+<?php include("includes/inavIndex.php"); ?>
 <?php include("includes/ifooter.php");?>
