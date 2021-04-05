@@ -6,10 +6,10 @@ session_start();
 <!DOCTYPE html> 
 <html  lang="fi-FI">
 <head>
-<title> revibe</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/projekti.css">
 <div class="header">
-  <img src="images/revibe.png" alt="logo"/>
+  <img class="center" src="images/revibe.png" alt="logo"/>
+</div>
 </head>
 <body>
