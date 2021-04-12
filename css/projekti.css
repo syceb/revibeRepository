@@ -5,13 +5,11 @@
 }
 body {
   background-color: var(--white);
-  font-family: 'Poppins';
-  color:#4B4B4B;
   margin: 0;
 	padding: 0;
 	border: 0;
+  font-family: 'Poppins', sans-serif;
 }
-
 footer{
     text-align: center;
     font-size: 20px;
@@ -22,14 +20,17 @@ nav{
   font-size: 18px;
   font-weight: bold;
   background-color: var(--white);
-  padding: 12px;
+  
 }
 ol{
   font-style: italic;
   list-style-type: lower-roman;
 }
 a{
-  padding-left: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+
 }
 tr{
   background-color: rgb(210, 159, 214);
@@ -52,6 +53,8 @@ font-weight: bold;
 .header{
   background-color: #B494CA;
   border-radius: 0px 0px 0px 100px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 .relax{
   display: block;
@@ -60,9 +63,70 @@ font-weight: bold;
   width: 100%;
   
 }
+.welcome{
+  font-size: 40px;
+  text-align: center;
+  background-color: #B494CA;
+  margin: 0;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+
+
+}
+.frontpage{
+  background-color: #B494CA;
+  padding-bottom: 50px;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+}
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.headerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.loginform{
+  text-align: center;
+}
+input[type=text], input[type=password]{
+  padding: 7px 20px;
+  font-size: 18px;
+  
+}
 
 
 
+input[type=submit]{
+  
+  padding: 9px 68px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 18px;
+  }
+
+  .createform{
+    text-align: center;
+
+  }
+  #gender{
+  padding: 7px 43px;
+  font-size: 18px;
+  color: gray;
+
+  }
+  #luotili{
+    padding: 9px 103px;
+  }
+ 
 
 
 

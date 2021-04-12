@@ -1,6 +1,5 @@
 <?php include("includes/iheader.php");?>
 
-<?php include("includes/inavCreateAccount.php"); ?>
 
 <?php include("forms/fcreateAccount.php"); ?>
 

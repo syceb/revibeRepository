@@ -1,15 +1,11 @@
-<fieldset><legend>Kirjautuminen</legend>
-<form method="post">
-  <p>
-  Sähköpostiosoite 
-  <br />  <input type="text" name="givenEmail" placeholder="Sähköpostiosoite" maxlength="40"/>
+
+<form class="loginform" method="post">
+  <p> 
+  <br />  <input type="text" name="givenEmail" placeholder="sähköposti" maxlength="40"/>
+  </p><p> 
+  <br />  <input type="password" name="givenPassword" placeholder="salasana" maxlength="40"/>
   </p><p>
-  Salasana 
-  <br />  <input type="password" name="givenPassword" placeholder="Salasana" maxlength="40"/>
-  </p><p>
-  <br />  <input type="submit" name="submitUser" value="Kirjaudu"/>
-          <input type="reset"  value="Tyhjennä"/>
-          <input type="submit" name="submitBack" value="Tyhjennä"/>
+  <br />  <input type="submit" name="submitUser" value="Kirjaudu sisään"/>
+          
   </p>
 </form>
-</fieldset>

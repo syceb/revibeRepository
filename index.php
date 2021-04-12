@@ -6,6 +6,7 @@
   if(!isset($_SESSION['sloggedIn'])){
 ?>
     <img class="relax" src="images/relax.png" alt="lepo"/>
+    <h1 class="welcome">Tervetuloa!</h1>
 <?php
   }else{
   //Lomake päiväkirjamerkinnällee
@@ -66,5 +67,10 @@ $kysely3->execute($data3);
   echo("</table>");
   }
 ?>
+
+
+
+
+
 <?php include("includes/inavIndex.php"); ?>
 <?php include("includes/ifooter.php");?>

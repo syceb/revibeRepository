@@ -1,5 +1,8 @@
 <?php include("includes/iheader.php");?>
-<?php include("includes/inavLogInUser.php"); ?>
+
+
+<img class="relax" src="images/relax.png" alt="lepo"/>
+<img class="profile" src="images/profiili1.png" alt="profiililogo"/>
 <?php include("forms/flogInUser.php"); ?>
 
 
