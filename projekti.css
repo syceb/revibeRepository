@@ -1,0 +1,87 @@
+/*Valikko*/
+.navBar {
+    background-color: #B494CA;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right .6s cubic-bezier(1, 0, 0, 1);
+}
+/*Muuttaa navBarin näkyviin burgeria painaessa*/
+.change {
+    right: 0;
+}
+/*Valikon lista*/
+.nav-list {
+    text-align: right;
+}
+/*Valikon linkien laatikot*/
+.nav-item {
+    list-style: none;
+    margin: 25px;
+}
+/*Valikon linkit*/
+.nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #F9F9F9;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+/*Burgerin tausta*/
+.burgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background: #B494CA;
+}
+/*Burgerin keskimmäinen palkki*/
+.burgerMenu-Btn {
+    width: 50px;
+    height: 6px;
+    background: #F9F9F9;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+/*Burgerin ylä- ja alaosa*/
+.burgerMenu-Btn::before,
+.burgerMenu-Btn::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #F9F9F9;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+/*Burgerin yläosa*/
+.burgerMenu-Btn::before {
+    transform: translateY(-16px);
+}
+/*Burgerin alaosa*/
+.burgerMenu-Btn::after {
+    transform: translateY(16px);
+}
+/*Burgerin keskimmäisen osan animaatio*/
+.burgerMenu.open .burgerMenu-Btn {
+    transform: translateX(-50px);
+    background: transparent;
+}
+/*Burgerin yläosan liike*/
+.burgerMenu.open .burgerMenu-Btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+/*Burgerin alaosan liike*/
+.burgerMenu.open .burgerMenu-Btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
