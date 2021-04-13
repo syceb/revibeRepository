@@ -17,7 +17,7 @@ if(isset($_POST['submitUser'])){
      try {
       //Tiedot kannasta, hakuehto
       $data['email'] = $_POST['givenEmail'];
-      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM users WHERE userEmail = :email;");
+      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM wsk6_user WHERE userEmail = :email;");
       $STH->execute($data);
       $STH->setFetchMode(PDO::FETCH_OBJ);
       $tulosOlio=$STH->fetch();
