@@ -49,7 +49,7 @@ if(!strlen($_POST['givenName'])>=1){
     }
   } catch(PDOException $e) {
     file_put_contents('log/DBErrors.txt', 'signInUser.php: '.$e->getMessage()."\n", FILE_APPEND);
-    $_SESSION['swarningInput'] = '';
+    $_SESSION['swarningInput'] = 'Database problem';
     
   }
 }
