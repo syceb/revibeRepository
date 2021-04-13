@@ -1,7 +1,7 @@
 <?php
 include_once("config/https.php");
 include_once("config/config.php");
-include_once("includes/burgermenu");
+include("includes/burgermenu.php");
 session_start();
 ?>
 <!DOCTYPE html> 

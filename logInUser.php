@@ -1,4 +1,4 @@
-<?php include("includes/header.php");?>
+<?php include("includes/iheader.php");?>
 
 
 <img class="relax" src="images/relax.png" alt="lepo"/>
