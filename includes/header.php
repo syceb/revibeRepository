@@ -1,7 +1,7 @@
 <?php
 include_once("config/https.php");
 include_once("config/config.php");
-
+include_once("includes/burgermenu");
 session_start();
 ?>
 <!DOCTYPE html> 
@@ -15,14 +15,3 @@ session_start();
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
-<?php
-
-
-//Käyttäjän tila
-echo("<h2>Päiväkirja</h2>");
-if($_SESSION['loggedIn']=="yes"){
-    echo("Logged in: " .$_SESSION['userName']);
-}
-?>
-</nav>
