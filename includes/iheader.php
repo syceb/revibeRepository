@@ -1,6 +1,7 @@
 <?php
 include_once("config/chttps.php");
 include_once("config/cconfig.php");
+include_once("includes/burgermenu");
 session_start();
 ?>
 <!DOCTYPE html> 
