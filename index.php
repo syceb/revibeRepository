@@ -1,4 +1,4 @@
-<?php include("includes/header.php");?>
+<?php include_once("includes/iheader.php");?>
 
 
 
@@ -10,6 +10,7 @@
 <?php
   }else{
   //Lomake päiväkirjamerkinnällee
+  include("includes/header.php");
   include("forms/frecovery.php");
   
   

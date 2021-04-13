@@ -42,6 +42,6 @@
         </li>
     </ul>
 </nav>
-<script src="burgermenu.js"></script>
+<script src="js/burgermenu.js"></script>
 </body>
 </html>
