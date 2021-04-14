@@ -1,10 +1,10 @@
-
+<?php include("includes/iheader.php");?>
 
 
 
 <?php
   if(!isset($_SESSION['sloggedIn'])){
-    include("includes/iheader.php");
+   
 ?>
 
   
