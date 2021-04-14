@@ -15,11 +15,6 @@
   //Lomake päiväkirjamerkinnällee
   include("includes/header.php");
   include("forms/frecovery.php");
-  
-  
-
-  
-
 ?>
 
 <?php include("includes/inavIndex.php"); ?>
