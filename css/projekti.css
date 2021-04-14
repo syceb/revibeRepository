@@ -50,9 +50,14 @@ font-weight: bold;
   margin-right: auto;
   width: 50%;
 }
-.header{
+.iheader{
   background-color: #B494CA;
   border-radius: 0px 0px 0px 100px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.header{
+  background-color: #B494CA;
   padding-bottom: 15px;
   padding-top: 15px;
 }

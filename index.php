@@ -5,7 +5,7 @@
 <?php
   if(!isset($_SESSION['sloggedIn'])){
 ?>
-    <img class="relax" src="images/relax.png" alt="lepo"/>
+    <img class="relax" src="images/relax.jpg" alt="lepo"/>
     <h1 class="welcome">Tervetuloa!</h1>
 <?php
   }else{
