@@ -4,9 +4,10 @@
 
 <?php
   if(!isset($_SESSION['sloggedIn'])){
+    include("includes/iheader.php");
 ?>
 
-    <?php include("includes/iheader.php");?>
+  
     <img class="relax" src="images/relax.png" alt="lepo"/>
     <h1 class="welcome">Tervetuloa!</h1>
 <?php
