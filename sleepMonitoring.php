@@ -19,11 +19,7 @@ article {
   margin: 0 30px 0 30px;
   font-size:20px;
 }
-h1{
-  font-size:20px;
-  margin:0;
-  
-}
+
 .button1 {
   font-family: 'Poppins';
   font-size:18px;

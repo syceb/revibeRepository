@@ -15,11 +15,6 @@
   //Lomake päiväkirjamerkinnällee
   include("includes/header.php");
   include("forms/frecovery.php");
-  
-  
-
-  
-
 ?>
 
 <?php
@@ -71,10 +66,6 @@ $kysely3->execute($data3);
   echo("</table>");
   }
 ?>
-
-
-
-
 
 <?php include("includes/inavIndex.php"); ?>
 <?php include("includes/ifooter.php");?>
