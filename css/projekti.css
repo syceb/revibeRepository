@@ -6,7 +6,7 @@
 body {
   background-color: var(--white);
   margin: 0;
-	padding: 0;
+    padding: 0;
 	border: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -14,6 +14,7 @@ footer{
     text-align: center;
     font-size: 20px;
     padding: 10px;
+    margin: 0;
 }
 nav{
   text-align: center;
@@ -45,6 +46,19 @@ td{
   background-color:rgb(223, 114, 199) ;
   border: rgb(0, 0, 0);
 }
+article {
+  background: rgba(180, 148, 202, 0.3);
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 60px 30px 60px;
+  text-align:center;
+  font-size:20px;
+}
+.helloUser {
+  padding-left:50px;
+  font-size:20px;
+}
 .warning{
 color: red;
 font-weight: bold;
@@ -75,15 +89,15 @@ font-weight: bold;
   margin: 0;
   color: white;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
-
-
 }
 .frontpage{
   background-color: #B494CA;
   padding-bottom: 50px;
   text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  margin-bottom:0; 
+  
 }
 .profile {
   display: block;
@@ -103,12 +117,10 @@ font-weight: bold;
 input[type=text], input[type=password]{
   padding: 7px 20px;
   font-size: 18px;
-  
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-input[type=submit]{
+input[type=submit], input[type=button]{
   
   padding: 9px 68px;
   color:white;
@@ -116,6 +128,7 @@ input[type=submit]{
   border-style: solid;
   text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
   font-size: 18px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .createform{
@@ -134,14 +147,16 @@ input[type=submit]{
  
 /*Valikko*/
 .navBar {
-  background-color: #B494CA;
-  position: fixed;
-  top: 0;
-  right: -300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: right .6s cubic-bezier(1, 0, 0, 1);
+    background-color: #B494CA;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right .6s cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
 }
 /*Muuttaa navBarin näkyviin burgeria painaessa*/
 .change {
@@ -167,37 +182,38 @@ input[type=submit]{
 }
 /*Burgerin tausta*/
 .burgerMenu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
-  background: #B494CA;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background: #B494CA;
 }
 /*Burgerin keskimmäinen palkki*/
 .burgerMenu-Btn {
-  width: 50px;
-  height: 6px;
-  background: #F9F9F9;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
+    width: 40px;
+    height: 8px;
+    background: #F9F9F9;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
 }
 /*Burgerin ylä- ja alaosa*/
 .burgerMenu-Btn::before,
 .burgerMenu-Btn::after{
   content: '';
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 8px;
   background: #F9F9F9;
   border-radius: 5px;
   transition: all .5s ease-in-out;
 }
+
 /*Burgerin yläosa*/
 .burgerMenu-Btn::before {
   transform: translateY(-16px);
@@ -219,5 +235,3 @@ input[type=submit]{
 .burgerMenu.open .burgerMenu-Btn::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-
-
