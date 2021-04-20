@@ -1,35 +1,171 @@
+:root{
+  --white:#F9F9F9;
+  --purple:#B494CA;
+  --black: #4B4B4B;
+}
+body {
+  background-color: var(--white);
+  margin: 0;
+    padding: 0;
+	border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+nav{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--white);
+  
+}
+h1{
+  font-size:20px;
+  margin:0;
+  
+}
+ol{
+  font-style: italic;
+  list-style-type: lower-roman;
+}
+a{
+  display: block;
+  color: white;
+  text-decoration: none;
+
+}
+tr{
+  background-color: rgb(210, 159, 214);
+  border: rgb(0, 0, 0);
+}
+td{
+  background-color:rgb(223, 114, 199) ;
+  border: rgb(0, 0, 0);
+}
+.warning{
+color: red;
+font-weight: bold;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.header{
+  background-color: #B494CA;
+  border-radius: 0px 0px 0px 100px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.relax{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+.welcome{
+  font-size: 40px;
+  text-align: center;
+  background-color: #B494CA;
+  margin: 0;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+
+
+}
+.frontpage{
+  background-color: #B494CA;
+  padding-bottom: 50px;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+}
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.headerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.loginform{
+  text-align: center;
+}
+input[type=text], input[type=password]{
+  padding: 7px 20px;
+  font-size: 18px;
+  
+}
+
+
+
+input[type=submit]{
+  
+  padding: 9px 68px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 18px;
+  }
+
+  .createform{
+    text-align: center;
+
+  }
+  #gender{
+  padding: 7px 43px;
+  font-size: 18px;
+  color: gray;
+
+  }
+  #luotili{
+    padding: 9px 103px;
+  }
+ 
 /*Valikko*/
 .navBar {
     background-color: #B494CA;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -500px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: right .6s cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
 }
-/*Muuttaa navBarin n‰kyviin burgeria painaessa*/
+/*Muuttaa navBarin n√§kyviin burgeria painaessa*/
 .change {
-    right: 0;
+  right: 0;
 }
 /*Valikon lista*/
 .nav-list {
-    text-align: right;
+  text-align: right;
 }
 /*Valikon linkien laatikot*/
 .nav-item {
-    list-style: none;
-    margin: 25px;
+  list-style: none;
+  margin: 25px;
 }
 /*Valikon linkit*/
 .nav-link {
-    text-decoration: none;
-    font-size: 22px;
-    color: #F9F9F9;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  text-decoration: none;
+  font-size: 22px;
+  color: #F9F9F9;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 /*Burgerin tausta*/
 .burgerMenu {
@@ -39,49 +175,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     background: #B494CA;
 }
-/*Burgerin keskimm‰inen palkki*/
+/*Burgerin keskimm√§inen palkki*/
 .burgerMenu-Btn {
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 8px;
     background: #F9F9F9;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
-/*Burgerin yl‰- ja alaosa*/
+/*Burgerin yl√§- ja alaosa*/
 .burgerMenu-Btn::before,
 .burgerMenu-Btn::after{
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #F9F9F9;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 8px;
+  background: #F9F9F9;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
 }
-/*Burgerin yl‰osa*/
+
+/*Burgerin yl√§osa*/
 .burgerMenu-Btn::before {
-    transform: translateY(-16px);
+  transform: translateY(-16px);
 }
 /*Burgerin alaosa*/
 .burgerMenu-Btn::after {
-    transform: translateY(16px);
+  transform: translateY(16px);
 }
-/*Burgerin keskimm‰isen osan animaatio*/
+/*Burgerin keskimm√§isen osan animaatio*/
 .burgerMenu.open .burgerMenu-Btn {
-    transform: translateX(-50px);
-    background: transparent;
+  transform: translateX(-50px);
+  background: transparent;
 }
-/*Burgerin yl‰osan liike*/
+/*Burgerin yl√§osan liike*/
 .burgerMenu.open .burgerMenu-Btn::before {
-    transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(35px, -35px);
 }
 /*Burgerin alaosan liike*/
 .burgerMenu.open .burgerMenu-Btn::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(35px, 35px);
 }
+
+

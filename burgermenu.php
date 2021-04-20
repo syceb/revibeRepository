@@ -2,51 +2,46 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="projekti.css">
+    <link rel="stylesheet" href="css/projekti.css">
 </head>
-
 <body>
-
-<nav class="navBar">
+<div class="navBar">
     <div class="burgerMenu">
         <div class="burgerMenu-Btn"></div>
     </div>
     <ul class="nav-list">
         <li class="nav-item">
-            <a href="#" class="nav-link">Etusivu</a>
+            <a href="index.php" class="nav-link">Etusivu</a>
         </li>
         <li class="nav-item">      
-            <a href="#" class="nav-link">Profiili</a>
+            <a href="userProfile" class="nav-link">Profiili</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Stressin seuranta</a>
+            <a href="stressMonitoring" class="nav-link">Stressin seuranta</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Unen seuranta</a>
+            <a href="sleepMonitoring" class="nav-link">Unen seuranta</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Grafiikka ja raportit</a>
+            <a href="graphicsReports" class="nav-link">Grafiikka ja raportit</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Muistutukset</a>
+            <a href="reminders" class="nav-link">Muistutukset</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Kirjaudu ulos</a>
+            <a href="logOutUser" class="nav-link">Kirjaudu ulos</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Asetukset</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Ota yhteyttä</a>
+            <a href="#" class="nav-link">Ota yhteyttÃ¤</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Tietosuojakäytäntö</a>
+            <a href="#" class="nav-link">TietosuojakÃ¤ytÃ¤ntÃ¶</a>
         </li>
     </ul>
-</nav>
-
-<script src="burgermenu.js"></script>
+</div>
+<script src="js/burgermenu.js"></script>
 </body>
-
-
 </html>
