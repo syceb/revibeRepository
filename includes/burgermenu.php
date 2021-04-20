@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="projekti.css">
+    <link rel="stylesheet" href="css/projekti.css">
 </head>
 <body>
-<nav class="navBar">
+<div class="navBar">
     <div class="burgerMenu">
         <div class="burgerMenu-Btn"></div>
     </div>
@@ -41,7 +41,7 @@
             <a href="#" class="nav-link">Tietosuojakäytäntö</a>
         </li>
     </ul>
-</nav>
+</div>
 <script src="js/burgermenu.js"></script>
 </body>
 </html>
