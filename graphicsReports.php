@@ -21,7 +21,7 @@
 
 <tr>
 <td>
-stress_index
+Stressi-indexi
 </td>
 </tr>
 
@@ -84,7 +84,10 @@ dateAxis.renderer.minGridDistance = 50;
 dateAxis.baseInterval = {timeUnit:"year", count:1};
 
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.min = 1;
+valueAxis.max = 5;
 valueAxis.tooltip.disabled = true;
+valueAxis.maxPrecision = 0;
 
 var series = chart.series.push(new am4charts.StepLineSeries());
 series.dataFields.dateX = "year";
@@ -102,7 +105,7 @@ chart.cursor.lineX.fillOpacity = 0.1;
 chart.scrollbarX = new am4core.Scrollbar();
 
 
-	document.getElementById("s1").innerHTML=data[0].value;
+	  document.getElementById("s1").innerHTML=data[0].value;
     document.getElementById("s2").innerHTML=data[1].value;
     document.getElementById("s3").innerHTML=data[2].value;
     document.getElementById("s4").innerHTML=data[3].value;
