@@ -79,9 +79,8 @@ chart.paddingRight = 20;
 chart.data = data;
 chart.dateFormatter.inputDateFormat = "yyyy";
 
-var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-dateAxis.renderer.minGridDistance = 50;
-dateAxis.baseInterval = {timeUnit:"year", count:1};
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "category";
 
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.min = 1;
@@ -90,13 +89,13 @@ valueAxis.tooltip.disabled = true;
 valueAxis.maxPrecision = 0;
 
 var series = chart.series.push(new am4charts.StepLineSeries());
-series.dataFields.dateX = "year";
+series.dataFields.categoryX = "category";
 series.dataFields.valueY = "value";
 series.tooltipText = "{valueY.value}";
 series.strokeWidth = 3;
 
 chart.cursor = new am4charts.XYCursor();
-chart.cursor.xAxis = dateAxis;
+chart.cursor.xAxis = categoryAxis;
 chart.cursor.fullWidthLineX = true;
 chart.cursor.lineX.strokeWidth = 0;
 chart.cursor.lineX.fill = chart.colors.getIndex(2);
