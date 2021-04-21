@@ -1,6 +1,6 @@
-<?php include("includes/header.php");?>
+<?php include("includes/iheader.php");?>
 
-<?php include("includes/inavIndex.php"); ?>
+
 
 <style>
 #chartdiv {
