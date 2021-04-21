@@ -82,6 +82,7 @@ chart.dateFormatter.inputDateFormat = "yyyy";
 var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 categoryAxis.dataFields.category = "category";
 
+
 var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.min = 1;
 valueAxis.max = 5;
