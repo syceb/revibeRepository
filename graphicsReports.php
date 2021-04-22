@@ -1,11 +1,15 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 
+<br>
+
 
 <style>
 #chartdiv {
   width: 100%;
   height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(180, 148, 202, 0.3);
 }
 
 </style>
