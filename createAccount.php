@@ -74,5 +74,6 @@ if(isset($_SESSION['swarningInput'])){
 }
 ?>
 
-
+<br>
+<br>
 <?php include("includes/ifooter.php");?>
