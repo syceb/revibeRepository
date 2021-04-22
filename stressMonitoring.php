@@ -5,7 +5,7 @@
 
 
 
-</style>
+
 
 <h1>Stressin seuranta</h1>
 

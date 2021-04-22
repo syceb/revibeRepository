@@ -2,13 +2,7 @@
 <?php include("includes/burgermenu.php");?>
 
 
-<style>
-#chartdiv {
-  width: 100%;
-  height: 500px;
-}
 
-</style>
 
 <!-- Resources -->
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
