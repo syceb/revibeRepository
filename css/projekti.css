@@ -235,3 +235,24 @@ input[type=submit], input[type=button]{
 .burgerMenu.open .burgerMenu-Btn::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
+
+.button1 {
+  font-family: 'Poppins';
+  font-size:18px;
+  background-color:#af99be;
+  color:white;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  border:none;
+  padding: 15px 20px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+.image {
+padding: 20px;
+width:150px
+}
+input {
+    margin-left:10px;
+}
