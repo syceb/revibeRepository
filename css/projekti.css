@@ -152,6 +152,7 @@ input[type=submit], input[type=button]{
     top: 0;
     right: -500px;
     height: 100%;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;

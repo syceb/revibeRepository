@@ -29,9 +29,6 @@
             <a href="reminders" class="nav-link">Muistutukset</a>
         </li>
         <li class="nav-item">
-            <a href="logOutUser" class="nav-link">Kirjaudu ulos</a>
-        </li>
-        <li class="nav-item">
             <a href="#" class="nav-link">Asetukset</a>
         </li>
         <li class="nav-item">
@@ -39,6 +36,9 @@
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Tietosuojakäytäntö</a>
+        </li>
+        <li class="nav-item">
+            <a href="logOutUser" class="nav-link">Kirjaudu ulos</a>
         </li>
     </ul>
 </div>
