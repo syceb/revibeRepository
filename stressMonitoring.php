@@ -55,5 +55,7 @@ $kysely3->execute($data3);
 		}
 	
   echo("</table>");?>
+  <br>
+  <br>
 
 <?php include("includes/ifooter.php");?>
