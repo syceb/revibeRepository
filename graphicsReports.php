@@ -21,50 +21,7 @@
 
 <div id="chartdiv"></div>
 
-<table>
 
-<tr>
-<td>
-Stressi-indexi
-</td>
-</tr>
-
-<tr>
-<td id="s1">
-</td>
-</tr>
-
-<tr>
-<td id="s2">
-</td>
-</tr>
-
-<tr>
-<td id="s3">
-</td>
-</tr>
-
-<tr>
-<td id="s4">
-</td>
-</tr>
-
-<tr>
-<td id="s5">
-</td>
-</tr>
-
-<tr>
-<td id="s6">
-</td>
-</tr>
-
-<tr>
-<td id="s7">
-</td>
-</tr>
-
-</table>
 <script>
 fetch('https://users.metropolia.fi/~miikkast/Projekti/api/api.php')
   .then((response) => {
@@ -124,7 +81,10 @@ chart.scrollbarX = new am4core.Scrollbar();
 
 
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 

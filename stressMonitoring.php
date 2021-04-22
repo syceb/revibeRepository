@@ -34,7 +34,7 @@ if(isset($_POST['submitRecovery'])){
    }
   }
 ?>
-  <h2>Stressipäiväkirja</h2>
+  <h2 id="stressiotsikko">Stressipäiväkirja</h2>
 <?php
 $data3['commentUserID'] = $currentUserID;
 $sql3 = "SELECT commentText, commentPainLevel, commentDate FROM wsk6_comment WHERE commentUserID = :commentUserID ORDER BY commentDate DESC LIMIT 30";

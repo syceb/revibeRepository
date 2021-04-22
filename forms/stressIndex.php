@@ -3,12 +3,12 @@
   <p>
    
   <br />  
-  <textarea rows = "4" cols = "50" name = "givenDescription"></textarea>
+  <textarea class="center" rows = "4" cols = "50" placeholder = "Mikä stressaa?" name = "givenDescription"></textarea>
   </p><p>
   
   
-  </p><p>Stressi tänään
-  <select name="givenPain">
+  </p><p><h1 class="center">Stressi tänään</h1>
+  <select class="center" name="givenPain">
   <option value="1">Ei stressiä</option>
   <option value="2">Kohtalaisesti stressiä</option>
   <option value="3">Ny ressaa</option>
@@ -16,7 +16,9 @@
   <option value="5">En voi hyvin</option>
 </select>
   </p><p>
-  <br />  <input type="submit" name="submitRecovery" value="Tallenna"/>
+  <br />  <input class="relax" type="submit" name="submitRecovery" value="Tallenna"/>
           
    </p>
+   <br>
+   <br>
 </form>

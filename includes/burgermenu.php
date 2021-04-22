@@ -29,13 +29,10 @@
             <a href="reminders" class="nav-link">Muistutukset</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Asetukset</a>
-        </li>
-        <li class="nav-item">
             <a href="#" class="nav-link">Ota yhteyttä</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Tietosuojakäytäntö</a>
+            <a href="tietosuojaseloste" class="nav-link">Tietosuojaseloste</a>
         </li>
         <li class="nav-item">
             <a href="logOutUser" class="nav-link">Kirjaudu ulos</a>
