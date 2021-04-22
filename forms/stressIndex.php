@@ -16,7 +16,7 @@
   <option value="5">En voi hyvin</option>
 </select>
   </p><p>
-  <br />  <input class="relax" type="submit" name="submitRecovery" value="Tallenna"/>
+  <br />  <input class="center" type="submit" name="submitRecovery" value="Tallenna"/>
           
    </p>
    <br>
