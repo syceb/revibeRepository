@@ -16,10 +16,10 @@ Y-tunnus: 3126213-4</h3>
 
 
 <h2>4. Henkilötietojen käsittelyn tarkoitus</h2>
-<h3>Henkilötietoja voidaan käyttää asiakkaan tunnistamiseen, uutiskirjeiden välittämiseen, asiakassuhteen ylläpitoon sekä verkkopalvelun personointiin.</h3>
+<h3>Henkilötietoja voidaan käyttää asiakkaan hyvinvoinnin seuraamiseen. </h3>
 
 <h2>5. Rekisterin tietosisältö</h2>
-<h3>Rekisteri voi pitää sisällään seuraavat tiedot: nimi, sähköpostiosoite, puhelinnumero, organsaatio, rekisteriin liittymisen sijainti ja ajankohta, kieli, aikavyöhyke, IP-osoite, Google Analyticsin ID-tunniste ja sivustokäyttäytyminen.</h3>
+<h3>Rekisteri pitää sisällään seuraavat tiedot: nimi, sähköpostiosoite, ikä, paino, pituus ja sukupuoli.</h3>
 
 <h2>6. Säännönmukaiset tietolähteet</h2>
 <h3>Rekisteri koostetaan revibe Oy:n kautta niistä kävijöistä, jotka täyttävät verkkopalvelussa rekisteröitymislomakkeen.</h3>
