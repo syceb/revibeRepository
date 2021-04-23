@@ -29,7 +29,7 @@
             <a href="reminders" class="nav-link">Muistutukset</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Ota yhteyttä</a>
+            <a href="contactInfo" class="nav-link">Ota yhteyttä</a>
         </li>
         <li class="nav-item">
             <a href="tietosuojaseloste" class="nav-link">Tietosuojaseloste</a>
