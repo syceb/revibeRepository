@@ -52,7 +52,7 @@ if(isset($_POST['submitUser'])){
 <?php
   //***Näytetäänkö lomakesyötteen aiheuttama varoitus?
 if(isset($_SESSION['swarningInput'])){
-  echo("<p class=\"warning\">ILLEGAL INPUT: ". $_SESSION['swarningInput']."</p>");
+  echo("<p class=\"warning\">Virhe kirjautumisessa: ". $_SESSION['swarningInput']."</p>");
 }
 ?>
 
