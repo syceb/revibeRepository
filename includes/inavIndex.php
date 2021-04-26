@@ -51,7 +51,7 @@ if($_SESSION['sloggedIn']=="yes"){
 #myBtn {
   border: none;
   background-color: inherit;
-  padding-top: 22px;
+  padding-top: 60px;
   cursor: pointer;
   display: inline-block;
   color: white;
@@ -88,6 +88,6 @@ if($_SESSION['sloggedIn']=="yes"){
 }
 ?>
 </nav>
-<br/>
+
 
 
