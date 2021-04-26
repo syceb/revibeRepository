@@ -17,7 +17,7 @@ if(isset($_POST['submitUser'])){
      try {
       //Tiedot kannasta, hakuehto
       $data['email'] = $_POST['givenEmail'];
-      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM wsk6_user WHERE userEmail = :email;");
+      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM revibe_user WHERE userEmail = :email;");
       $STH->execute($data);
       $STH->setFetchMode(PDO::FETCH_OBJ);
       $tulosOlio=$STH->fetch();
@@ -47,15 +47,7 @@ if(isset($_POST['submitUser'])){
 }
 ?>
 
-<?php
-//***Luovutetaanko ja palataan takaisin pääsivulle alkutilanteeseen
-//ilma  rekisteröintiä?
-if(isset($_POST['submitBack'])){
-  session_unset();
-  session_destroy();
-  header("Location: index.php");
-}
-?>
+
 
 <?php
   //***Näytetäänkö lomakesyötteen aiheuttama varoitus?

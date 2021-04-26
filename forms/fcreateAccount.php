@@ -8,12 +8,6 @@
   <!-- Ikä -->
     <input type="text" name="givenAge" placeholder="ikä" />
   </p><p>
-  <!-- Paino -->
-    <input type="text" name="givenWeight" placeholder="paino" />
-  </p><p>
-  <!-- Pituus -->
-    <input type="text" name="givenHeight" placeholder="pituus" />
-  </p><p>
 
   <select id="gender" name="givenGender">
       <option value="sukupuoli">sukupuoli</option>

@@ -12,7 +12,7 @@
  //kirjautuneen käyttäjän userID?
     $data1['email'] = $_SESSION['suserEmail'];
     //var_dump($data1);
-    $sql1 = "SELECT userID FROM wsk6_user where userEmail =  :email";
+    $sql1 = "SELECT userID FROM revibe_user where userEmail =  :email";
     $kysely1=$DBH->prepare($sql1);
     $kysely1->execute($data1);
     $tulos1=$kysely1->fetch();
@@ -25,7 +25,7 @@ if(isset($_POST['submitRecovery'])){
     $data2['commentPainLevel']=$_POST['givenPain'];
     $data2['commentUserID']=$currentUserID;
     //var_dump($data2);
-    $sql2="INSERT INTO wsk6_comment (commentText, commentPainLevel, commentUserID)
+    $sql2="INSERT INTO revibe_stressIndex (commentText, commentPainLevel, commentUserID)
     VALUES (:commentText, :commentPainLevel, :commentUserID);";
      $kysely2 = $DBH->prepare($sql2); 
      $kysely2->execute($data2);
@@ -37,7 +37,7 @@ if(isset($_POST['submitRecovery'])){
   <h2 id="stressiotsikko">Stressipäiväkirja</h2>
 <?php
 $data3['commentUserID'] = $currentUserID;
-$sql3 = "SELECT commentText, commentPainLevel, commentDate FROM wsk6_comment WHERE commentUserID = :commentUserID ORDER BY commentDate DESC LIMIT 30";
+$sql3 = "SELECT commentText, commentPainLevel, commentDate FROM revibe_stressIndex WHERE commentUserID = :commentUserID ORDER BY commentDate DESC LIMIT 30";
 $kysely3=$DBH->prepare($sql3);
 $kysely3->execute($data3);				
 
