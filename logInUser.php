@@ -11,7 +11,7 @@
 if(isset($_POST['submitUser'])){
   //***Tarkistetaan syötteet myös palvelimella
   if(!filter_var($_POST['givenEmail'], FILTER_VALIDATE_EMAIL)){
-   $_SESSION['swarningInput']="Illegal email";
+   $_SESSION['swarningInput']="Väärä sähköpostiosoite";
   }else{
     unset($_SESSION['swarningInput']); 
      try {
@@ -41,7 +41,7 @@ if(isset($_POST['submitUser'])){
       }
      } catch(PDOException $e) {
         file_put_contents('log/DBErrors.txt', 'signInUser.php: '.$e->getMessage()."\n", FILE_APPEND);
-        $_SESSION['swarningInput'] = 'Database problem';
+        $_SESSION['swarningInput'] = 'Database ongelma';
     }
   }
 }
