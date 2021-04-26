@@ -8,8 +8,10 @@
 //Lomakkeen submit painettu???
 if(isset($_POST['submitUser'])){
   //***Tarkistetaan syötteet myös palvelimella
-  if(strlen($_POST['givenName'])<1){
+  if(strlen($_POST['givenName'])<2){
    $_SESSION['swarningInput']="Liian lyhyt etunimi";
+  }else if(strlen($_POST['givenSurname'])<2){
+    $_SESSION['swarningInput']="Liian lyhyt sukunimi";
   }else if(!filter_var($_POST['givenEmail'], FILTER_VALIDATE_EMAIL)){
    $_SESSION['swarningInput']="Sähköposti kirjoitettu väärin";
   }else if(strlen($_POST['givenPassword'])<4){
@@ -60,7 +62,7 @@ if(isset($_POST['submitUser'])){
 <?php
   //***Näytetäänkö lomakesyötteen aiheuttama varoitus?
 if(isset($_SESSION['swarningInput'])){
-  echo("<p class=\"warning\">ILLEGAL INPUT: ". $_SESSION['swarningInput']."</p>");
+  echo("<p class=\"warning\">Virhe käyttäjätiedoissa: ". $_SESSION['swarningInput']."</p>");
 }
 ?>
 
