@@ -41,13 +41,14 @@ a{
   text-decoration: none;
 }
 tr{
-  background-color: rgb(210, 159, 214);
+  background-color:#ccbad8;
+  color: var(--black);
   border: rgb(0, 0, 0);
 }
 td{
-  background-color:var(--purple);
+  background-color: #ded4e6;
   border: rgb(0, 0, 0);
-  color:var(--white)
+  color:var(--black);
 }
 article {
   background: rgba(180, 148, 202, 0.3);
@@ -273,6 +274,7 @@ width:150px
 }
 table{
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
 }
 #stressiotsikko{
   text-align: center;
