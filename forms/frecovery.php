@@ -8,7 +8,7 @@
 
   <article>
     <h1>Stressin seuranta</h1>
-    <input class="heart" type="image" src="images/sydan2.png" name="submit" width="50px" height="50px" alt="submit"/>  
+    <image class="heart" type="image" src="images/sydan2.png" name="submit" width="50px" height="50px" alt="submit"/>  
     <br>
     <input type="button" onclick="location.href='stressMonitoring.php';" value="Tee päiväkirjamerkintä" />
   </article>
@@ -16,7 +16,7 @@
   <article>
     <h1>Unen seuranta</h1>
 
-    <i class="fa fa-clock-o" style="font-size:36px"></i>
+    <i class="fa fa-clock-o" style="font-size:50px"></i>
     <br>
     <input type="button" onclick="location.href='sleepMonitoring.php';" value="Lisää unitiedot" />
   </article>
