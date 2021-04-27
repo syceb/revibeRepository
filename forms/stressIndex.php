@@ -1,4 +1,6 @@
 
+<h1 id="pageTitle" >Stressin seuranta</h1>
+<article>
 <form method="post">
   <p>
    
@@ -22,3 +24,4 @@
    <br>
    <br>
 </form>
+</article>
