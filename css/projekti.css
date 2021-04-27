@@ -280,3 +280,15 @@ table{
 .fa-clock-o:before {
   color: var(--black) ;
 }
+.stressBtn{
+  padding: 9px 20px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 18px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;  
+  cursor: pointer;
+  text-align: center;
+}

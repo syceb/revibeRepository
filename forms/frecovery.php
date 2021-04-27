@@ -10,7 +10,7 @@
     <h1>Stressin seuranta</h1>
     <image class="heart" type="image" src="images/sydan2.png" name="submit" width="50px" height="50px" alt="submit"/>  
     <br>
-    <input type="button" onclick="location.href='stressMonitoring.php';" value="Tee päiväkirjamerkintä" />
+    <input class="stressBtn" onclick="location.href='stressMonitoring.php';" value="Tee päiväkirjamerkintä" />
   </article>
 
   <article>
