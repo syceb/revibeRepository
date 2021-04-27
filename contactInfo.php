@@ -13,10 +13,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px; 
   resize: vertical 
 }
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .container {
   border-radius: 5px;
 
@@ -24,16 +20,9 @@ input[type=submit]:hover {
 }
 </style>
 
-<div class="container">
-  <form action="action_page.php">
-  <h1>Yhteystiedot</h1>
+  <h1 id="pageTitle">Yhteystiedot</h1>
 
-            <p>Stressitönkatu 7<br>
-                00150 Helsinki<br>
-                045 123 1234<br>
-                info@revibe.fi
-            </p>
-
+<article>
 
   <h1>Ota yhteyttä</h1>
     
@@ -47,6 +36,19 @@ input[type=submit]:hover {
     <input type="submit" value="Lähetä viesti">
 
   </form>
+</div>
+</article>
+
+<div class ="contactInfo">
+
+<p><b>Stressitönkatu 7<br>
+    00150 Helsinki<br>
+    045 123 1234<br>
+    info@revibe.fi
+    </b></p>
+
+<img src="images/facebook.png" name="submit" width="30px" height="30px" alt="submit"/> 
+<img src="images/instagram.png" name="submit" width="30px" height="30px" alt="submit"/> 
 </div>
 
 <?php include("includes/ifooter.php");?>

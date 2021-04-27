@@ -305,3 +305,9 @@ table{
 form {
   margin: -50px;
 }
+.contactInfo {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 2;
+}
