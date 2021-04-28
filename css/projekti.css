@@ -210,7 +210,6 @@ input[type=submit], input[type=button]{
     cursor: pointer;
     transition: all .5s ease-in-out;
     background: #B494CA;
-    margin-right: 4%;
     margin-top: 2%;
 }
 /*Burgerin keskimmäinen palkki*/
