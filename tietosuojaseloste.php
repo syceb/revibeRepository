@@ -5,11 +5,11 @@
 <h2><b>Tietosuojaseloste</b></h2>
 <h2>1. Rekisterinpitäjä</h2>
 <h3>revibe Oy <br>
-Osoite: Järvitie 1, 00840 London <br>
+Osoite: Stressitönkatu 7, 00150 Helsinki <br>
 Y-tunnus: 3126213-4</h3>
 
 <h2>2. Yhteyshenkilö rekisteriä koskevissa asioissa</h2>
-<h3>Riku Lahdenperä, vainottaja@gmail.com</h3>
+<h3>Riku Lahdenperä, info@revibe.fi</h3>
 
 <h2>3. Rekisterit</2>
 <h3>revibe Oy:n asiakasrekisteri</h3>

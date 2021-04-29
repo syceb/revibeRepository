@@ -15,8 +15,21 @@ input[type=text], select, textarea {
 }
 .container {
   border-radius: 5px;
-
   padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.facebook {
+    padding: 5px;
+    margin-left: 40%;
+}
+.instagram {
+    padding: 5px;
+    margin-right: 44%;
 }
 </style>
 
@@ -46,9 +59,15 @@ input[type=text], select, textarea {
     045 123 1234<br>
     info@revibe.fi
     </b></p>
+</div>
 
-<img src="images/facebook.png" name="submit" width="30px" height="30px" alt="submit"/> 
-<img src="images/instagram.png" name="submit" width="30px" height="30px" alt="submit"/> 
+<div class="row">
+  <div class="facebook">
+  <a href ="https://www.facebook.com/"><img src="images/facebook.png" name="submit" width="30px" height="30px" alt="submit"/> 
+  </div>
+  <div class="instagram">
+  <a href ="https://www.instagram.com/"><img src="images/instagram.png" name="submit" width="30px" height="30px" alt="submit"/>
+  </div>
 </div>
 
 <?php include("includes/ifooter.php");?>
