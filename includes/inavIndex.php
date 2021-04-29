@@ -51,14 +51,14 @@ if($_SESSION['sloggedIn']=="yes"){
 #myBtn {
   border: none;
   background-color: inherit;
-  padding-top: 60px;
+  padding-top: 40px;
   cursor: pointer;
   display: inline-block;
   color: white;
   text-decoration: none;
   text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 20.8px;
   font-weight: bold;
 }
 
