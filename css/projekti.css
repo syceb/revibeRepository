@@ -157,7 +157,7 @@ input[type=submit], input[type=button]{
 
   }
   #luotili{
-    padding: 0.6rem 6.5rem;
+    padding: 9px 112px 9px 112px
   }
  
 /*Valikko*/
@@ -167,7 +167,7 @@ input[type=submit], input[type=button]{
     top: 0;
     right: -500px;
     height: 100%;
-    width: 400px;
+    width: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,4 +309,7 @@ table{
   letter-spacing: 1px;
   font-size: 1.3rem;
   line-height: 2;
+}
+#kirjaudusisaan{
+  padding: 9px 75px 9px 75px;
 }
