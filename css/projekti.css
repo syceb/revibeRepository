@@ -99,7 +99,7 @@ padding:0.7rem;
   margin: 0;
   color: white;
   padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding-bottom: 50px;
   text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
 }
 .frontpage{
@@ -280,9 +280,9 @@ width: 9.4rem;
 table{
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  margin: 30px 50px 30px 50px;
   text-align:center;
-  font-size:1.3rem;
+  background-color: var(--white);
+  
 }
 #stressiotsikko{
   text-align: center;
@@ -311,4 +311,32 @@ table{
 }
 #kirjaudusisaan{
   padding: 9px 75px 9px 75px;
+}
+.tietosuoja{
+  padding-left: 10px;
+}
+#tallenna{
+  padding: 9px;
+}
+.stressMonitoring{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 18px;
+}
+.indexi{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 18px;
+}
+.stresstoday{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
