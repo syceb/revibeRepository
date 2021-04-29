@@ -1,7 +1,7 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 
-<div class="center">
+<div class="tietosuoja">
 <h2><b>Tietosuojaseloste</b></h2>
 <h2>1. Rekisterinpitäjä</h2>
 <h3>revibe Oy <br>
