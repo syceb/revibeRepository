@@ -1,13 +1,12 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 <?php
-//Määritetään nykyisen käyttäjän email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
+//M��ritet��n nykeisen k�ytt�j�n email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
 $asd1=$_SESSION['suserEmail'];
 $asd2=$_SESSION['suserName'];
 $asd3=$_SESSION['suserID'];
 ?>
 <body>
-
 <article>
  <?php
 //Luodaan yhteys databaseen.
@@ -35,7 +34,8 @@ if ($result->num_rows > 0) {
 //katkaistaan database yhteys.
 $conn->close();
 ?>
-
+</article>
+<article>
     <div>
         <input class="editProfile" id="muokkaaTietoja"  onclick="location.href='editProfile.php'"; value="Muokkaa tietoja">
     </div>

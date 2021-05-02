@@ -8,7 +8,7 @@
   <!-- Ikä -->
     <input type="text" name="givenAge" placeholder="ikä" />
   </p><p>
-
+  <!-- Sukupuoli -->
   <select id="gender" name="givenGender">
       <option value="sukupuoli">sukupuoli</option>
       <option value="nainen">nainen</option>

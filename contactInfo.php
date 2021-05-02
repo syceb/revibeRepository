@@ -34,7 +34,7 @@ input[type=text], select, textarea {
 </style>
 
   <h1 id="pageTitle">Yhteystiedot</h1>
-
+<form method="post">
 <article>
 
 
@@ -43,17 +43,44 @@ input[type=text], select, textarea {
 
 <!--Ota yhteyttä - lomake. Viestit tallentuvat tietokantaan -->
 
-    <input type="text" id="fname" name="firstname" placeholder="Etunimi">
+    <input type="text" id="aihe" name="aihe" placeholder="Aihe">
 
-    <input type="text" id="lname" name="lastname" placeholder="Sukunimi">
 
     <textarea id="subject" name="subject" placeholder="Kirjoita viesti tähän..." style="height:200px"></textarea>
 
-    <input type="submit" value="Lähetä viesti">
+    <input id="submitMessage" type="submit" name="submitMessage" value="Lähetä viesti"/>
 
-  </form>
+  
 </div>
 </article>
+</form>
+<?php
+ //kirjautuneen käyttäjän userID?
+    $data1['email'] = $_SESSION['suserEmail'];
+    //var_dump($data1);
+    $sql1 = "SELECT userID FROM revibe_user where userEmail =  :email";
+    $kysely1=$DBH->prepare($sql1);
+    $kysely1->execute($data1);
+    $tulos1=$kysely1->fetch();
+    $currentUserID=$tulos1[0];
+    ?>
+<?php
+if(isset($_POST['submitMessage'])){
+   try {
+    $data['tekstiAihe']=$_POST['aihe'];
+    $data['comment']=$_POST['subject'];
+    $data['commentUserID']=$currentUserID;
+    //var_dump($data);
+    $sql="INSERT INTO revibe_contact (tekstiAihe, comment, commentUserID)
+    VALUES (:tekstiAihe, :comment, :commentUserID);";
+     $kysely = $DBH->prepare($sql); 
+     $kysely->execute($data);
+   } catch(PDOException $e) {
+    file_put_contents('log/DBErrors.txt', 'index.php: '.$e->getMessage()."\n", FILE_APPEND);
+   }
+  }
+?>
+			
 
 <div class ="contactInfo">
 
