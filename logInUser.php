@@ -17,7 +17,7 @@ if(isset($_POST['submitUser'])){
      try {
       //Tiedot kannasta, hakuehto
       $data['email'] = $_POST['givenEmail'];
-      $STH = $DBH->prepare("SELECT userName, userEmail, userPwd FROM revibe_user WHERE userEmail = :email;");
+      $STH = $DBH->prepare("SELECT userID, userName, userEmail, userPwd FROM revibe_user WHERE userEmail = :email;");
       $STH->execute($data);
       $STH->setFetchMode(PDO::FETCH_OBJ);
       $tulosOlio=$STH->fetch();
@@ -30,6 +30,7 @@ if(isset($_POST['submitUser'])){
           //var_dump($tulosOlio);
           if(password_verify($givenPasswordAdded,$tulosOlio->userPwd)){
               $_SESSION['sloggedIn']="yes";
+              $_SESSION['suserID']=$tulosOlio->userID;
               $_SESSION['suserName']=$tulosOlio->userName;
               $_SESSION['suserEmail']=$tulosOlio->userEmail;
               header("Location: index.php"); //Palataan pääsivulle kirjautuneena
