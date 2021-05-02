@@ -76,7 +76,14 @@ if($_SESSION['sloggedIn']=="yes"){
   <!-- Ikkunan sisältö -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi ipsum ea nihil vitae enim ducimus aliquam animi, ratione veniam tempore quibusdam autem ipsam repudiandae. Natus dolor numquam quae nihil. </p>
+    <p> Revibe on luotettava ja helppokäyttöinen päiväkirjasovellus stressistä kärsiville.
+     Päiväkirjamerkinnät ja olokyselyn vastaukset tallentuvat käyttäjän profiiliin, minkä jälkeen ne näkyvät stressi- sivulla taulukossa.
+
+     <br>
+    Päiväkirjasovellukset tutkitusti parantavat käyttäjiensä hyvinvointia, sillä ne kannustavat
+     ihmisiä huolehtimaan paremmin terveydestään.
+
+     </p>
   </div>
 
 </div>
