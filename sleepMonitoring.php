@@ -4,22 +4,21 @@
 
 
 <h1 id="pageTitle" >Unen seuranta</h1>
-
   <article>
   
     <label for="sleep">Nukahtamisaika:</label>
-    <input type="time" id="sleep" name="sleep" min="09:00" max="18:00" required>
+    <input type="time" id="sleep" name="sleep" required>
     <br>
     <label for="awake">Heräämisaika:</label>
-    <input type="time" id="awake" name="awake" min="00:00" max="24:00" required>
+    <input type="time" id="awake" name="awake" required>
 
     <input type="submit" value="Tallenna" id = "submitTime" name="submitTime" onclick="msg()">
 
     <p> Tyypillisesti aikuisen ihmisen unentarve on noin 7–9 tuntia vuorokaudessa.</p>
-    <p>Nukuttu aika: <br /> <span name="sleepTime" id="diff"></span>&nbsp; tuntia.</p>
+    <p>Nukuttu aika: <br /> <span name="diff" id="diff"></span>&nbsp; tuntia.</p>
 
  </article>
-
+ 
  <script src="js/sleepTime.js"></script>
  
 
@@ -42,14 +41,14 @@
 
 if(isset($_POST['submitTime'])){
    try {
-    $data3['commentSleep']=$_POST['sleepTime'];
+    $data['commentSleep']=$_POST['diff'];
     
-    $data3['commentUserID']=$currentUserID;
-    //var_dump($data2);
-    $sql3="INSERT INTO revibe_sleepTime (commentSleep, commentUserID)
+    $data['commentUserID']=$currentUserID;
+    //var_dump($data);
+    $sql="INSERT INTO revibe_sleepTime (commentSleep, commentUserID)
     VALUES (:commentSleep, :commentUserID);";
-     $kysely3 = $DBH->prepare($sql3); 
-     $kysely3->execute($data3);
+     $kysely = $DBH->prepare($sql); 
+     $kysely->execute($data);
    } catch(PDOException $e) {
     file_put_contents('log/DBErrors.txt', 'index.php: '.$e->getMessage()."\n", FILE_APPEND);
    }
