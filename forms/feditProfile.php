@@ -23,7 +23,4 @@
 <p>
     <input id="tallennaTiedot" type="submit" name="changeInfo" value="Tallenna tiedot"/>
 </p>
-<p>
-    <input id="poistaTiedot" type="submit" name="deleteProfile" value="Poista profiili"/>
-</p>
 </form>

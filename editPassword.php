@@ -16,36 +16,20 @@ if ($conn->connect_error) {
 
 if(isset($_POST['changePassword']))
 {
-  $n_password=$_POST['n_password'];
-  $n_password=mysqli_real_escape_string($conn,$n_password);
-  $n_password=htmlentities($n_password);
-  $c_password=$_POST['c_password'];
-  $c_password=mysqli_real_escape_string($conn,$c_password);
-  $c_password=htmlentities($c_password);
 
-  $data['pwd'] = password_hash($_POST['n_password'].$added, PASSWORD_BCRYPT);
+    $n_password=$_POST['n_password'];
+    $c_password=$_POST['c_password'];
 
-if($c_password === $n_password)
-  {
-    $sql="UPDATE revibe_user SET userPwd='$data' WHERE userID = '$asd3'";
-     $res=mysqli_query($conn,$sql);
-     
-     if($res)
-     {
-         //Password Successfully Changed.
-         header('location:userProfile.php');
-     }
-     else
-     {
-         //Sorry, Something went wrong, Please Try Again.
-         header('location:index.php');
-     }
+    if(strlen($_POST['n_password'])<4){
+    $_SESSION['swarningInput']="Liian lyhyt salasana";
+    }else if($_POST['n_password']!= $_POST['c_password']){
+    $_SESSION['swarningInput']="Salasanat eivät täsmää";
+    }else{
+    unset($_SESSION['swarningInput']);
+    }
+  $data = password_hash($_POST['n_password'].$added, PASSWORD_BCRYPT);
+  $sql="UPDATE revibe_user SET userPwd='$data' WHERE userID = '$asd3'";
+  $res=mysqli_query($conn,$sql);
   }
-  else
-  {
-      //Password do not Match.
-      header('location:sleepMonitoring.php');
-}
-}
 ?>
 <?php include("includes/ifooter.php");?>
