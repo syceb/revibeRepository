@@ -6,13 +6,14 @@
 <h1 id="pageTitle" >Unen seuranta</h1>
 
   <article>
-  
+<!--Alasvetovalikko nukahtamisajalle -->
     <label for="sleep">Nukahtamisaika:</label>
     <input type="time" id="sleep" name="sleep" min="09:00" max="18:00" required>
     <br>
+<!--Alasvetovalikko heräämisajalle -->
     <label for="awake">Heräämisaika:</label>
     <input type="time" id="awake" name="awake" min="00:00" max="24:00" required>
-
+<!--Tietojen tallentuminen -->
     <input type="submit" value="Tallenna" id = "submitTime" name="submitTime" onclick="msg()">
 
     <p> Tyypillisesti aikuisen ihmisen unentarve on noin 7–9 tuntia vuorokaudessa.</p>

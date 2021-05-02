@@ -70,15 +70,15 @@ if($_SESSION['sloggedIn']=="yes"){
 
     <button id="myBtn">Mikä on revibe?</button>
 
-<!-- Ikkuna -->
+<!-- Popup -ikkuna -->
 <div id="myModal" class="modal">
 
-  <!-- Ikkunan sisältö -->
+  <!-- PopUp -ikkunan sisältö -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <p> Revibe on luotettava ja helppokäyttöinen päiväkirjasovellus stressistä kärsiville.
      Päiväkirjamerkinnät ja olokyselyn vastaukset tallentuvat käyttäjän profiiliin, minkä jälkeen ne näkyvät stressi- sivulla taulukossa.
-
+    
      <br>
     Päiväkirjasovellukset tutkitusti parantavat käyttäjiensä hyvinvointia, sillä ne kannustavat
      ihmisiä huolehtimaan paremmin terveydestään.

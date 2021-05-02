@@ -37,8 +37,11 @@ input[type=text], select, textarea {
 
 <article>
 
+
+
   <h1>Ota yhteyttä</h1>
-    
+
+<!--Ota yhteyttä - lomake. Viestit tallentuvat tietokantaan -->
 
     <input type="text" id="fname" name="firstname" placeholder="Etunimi">
 
@@ -60,7 +63,7 @@ input[type=text], select, textarea {
     info@revibe.fi
     </b></p>
 </div>
-
+<!--Somekuvakkeet -->
 <div class="row">
   <div class="facebook">
   <a href ="https://www.facebook.com/"><img src="images/facebook.png" name="submit" width="30px" height="30px" alt="submit"/> 
