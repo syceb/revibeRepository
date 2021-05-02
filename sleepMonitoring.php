@@ -16,7 +16,7 @@
     <input type="button" value="Tallenna" id = "submitTime" name="submitTime" onclick="msg()">
 
     <p> Tyypillisesti aikuisen ihmisen unentarve on noin 7–9 tuntia vuorokaudessa.</p>
-    <p>Total: <br /> <span name="sleepTime" id="diff"></span>&nbsp; hours.</p>
+    <p>Nukuttu aika: <br /> <span name="sleepTime" id="diff"></span>&nbsp; tuntia.</p>
 
  </article>
 
