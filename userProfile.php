@@ -1,7 +1,7 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 <?php
-//M‰‰ritet‰‰n nykeisen k‰ytt‰j‰n email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
+//MÔøΩÔøΩritetÔøΩÔøΩn nykeisen kÔøΩyttÔøΩjÔøΩn email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
 $asd1=$_SESSION['suserEmail'];
 $asd2=$_SESSION['suserName'];
 $asd3=$_SESSION['suserID'];
@@ -18,14 +18,14 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-//Haetaan tiedot k‰ytt‰j‰lt‰, jolla on sama ID kuin m‰‰ritetty ID (asd3)
+//Haetaan tiedot kÔøΩyttÔøΩjÔøΩltÔøΩ, jolla on sama ID kuin mÔøΩÔøΩritetty ID (asd3)
 $sql = "SELECT userID, userName, userSurname, userEmail, userAge, userGender FROM revibe_user WHERE userID = '$asd3'";
 $result = $conn->query($sql);
-//Tarkistetaan onko tietoja enemm‰n kuin 0 ja tulostetaan ne.
+//Tarkistetaan onko tietoja enemmÔøΩn kuin 0 ja tulostetaan ne.
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    echo "<p>Nimi: " . $row["userName"]."</p>", "<p>Sukunimi: " . $row["userSurname"]."</p>", "<p>Email: " . $row["userEmail"]."</p>", 
-    "<p>Ik‰: " . $row["userAge"]."</p>", "<p>Sukupuoli: " . $row["userGender"]."</p>";
+    echo "<p>Nimi: " . $row["userName"]."</p>", "<p>Sukunimi: " . $row["userSurname"]."</p>", "<p>S√§hk√∂posti: " . $row["userEmail"]."</p>", 
+    "<p>Ika: " . $row["userAge"]."</p>", "<p>Sukupuoli: " . $row["userGender"]."</p>";
   }
   //Jos tietoja ei ole tulostetaan "Ei profiili tietoja".
 } else {
