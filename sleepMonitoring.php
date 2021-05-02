@@ -13,7 +13,7 @@
     <label for="awake">Heräämisaika:</label>
     <input type="time" id="awake" name="awake" min="00:00" max="24:00" required>
 
-    <input type="button" value="Tallenna" id = "submitTime" name="submitTime" onclick="msg()">
+    <input type="submit" value="Tallenna" id = "submitTime" name="submitTime" onclick="msg()">
 
     <p> Tyypillisesti aikuisen ihmisen unentarve on noin 7–9 tuntia vuorokaudessa.</p>
     <p>Nukuttu aika: <br /> <span name="sleepTime" id="diff"></span>&nbsp; tuntia.</p>
