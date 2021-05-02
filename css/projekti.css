@@ -341,3 +341,39 @@ table{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+.editProfile{
+  padding: 9px 1px 9px 1px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 1.2rem;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0.7rem;  
+  cursor: pointer;
+  text-align:center; 
+}
+.editPassword {
+  padding: 9px 1px 9px 1px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 1.2rem;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0.7rem;  
+  cursor: pointer;
+  text-align:center; 
+}
+.removeProfile {
+  padding: 9px 1px 9px 1px;
+  color:white;
+  background-color: var(--purple);
+  border-style: solid;
+  text-shadow: 2px 5px 5px rgb(27 27 27 / 50%);
+  font-size: 1.2rem;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0.7rem;  
+  cursor: pointer;
+  text-align:center; 
+}

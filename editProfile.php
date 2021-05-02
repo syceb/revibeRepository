@@ -33,12 +33,12 @@ if(isset($_POST['changeInfo']))
 if($sql2)
        { 
            /*Successful*/
-           echo "Tietojen p‰ivitys onnistui";
+           echo "Tietojen p√§ivitys onnistui";
        }
        else
        {
            /*sorry your profile is not update*/
-           echo "Tietojen p‰ivitys ep‰onnistui";
+           echo "Tietojen p√§ivitys ep√§onnistui";
 
        }
     }

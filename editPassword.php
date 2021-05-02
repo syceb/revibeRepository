@@ -23,7 +23,7 @@ if(isset($_POST['changePassword']))
     if(strlen($_POST['n_password'])<4){
     $_SESSION['swarningInput']="Liian lyhyt salasana";
     }else if($_POST['n_password']!= $_POST['c_password']){
-    $_SESSION['swarningInput']="Salasanat eivät täsmää";
+    $_SESSION['swarningInput']="Salasanat eivÃ¤t tÃ¤smÃ¤Ã¤";
     }else{
     unset($_SESSION['swarningInput']);
     }
