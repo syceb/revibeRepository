@@ -20,8 +20,8 @@ $result = $conn->query($sql);
 //Tarkistetaan onko tietoja enemmän kuin 0 ja tulostetaan ne.
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    echo "ID: " . $row["userID"]. "Nimi: " . $row["userName"]. " " . $row["userSurname"]. " - Email: " . $row["userEmail"]. 
-    " - Ikä: " . $row["userAge"]. " - Sukupuoli: " . $row["userGender"]."<br>";
+    echo "<p>Nimi: " . $row["userName"]."</p>", "<p>Sukunimi: " . $row["userSurname"]."</p>", "<p>Email: " . $row["userEmail"]."</p>", 
+    "<p>Ikä: " . $row["userAge"]."</p>", "<p>Sukupuoli: " . $row["userGender"]."</p>";
   }
   //Jos tietoja ei ole tulostetaan "Ei profiili tietoja".
 } else {
@@ -30,10 +30,17 @@ if ($result->num_rows > 0) {
 //katkaistaan database yhteys.
 $conn->close();
 ?>
-
-<input class="testi" onclick="location.href='editProfile.php'"; value="Muokkaa tietoja">
-<input class="testi1" onclick="location.href='editPassword.php'"; value="Vaihda salasana">
-<input class="testi2" onclick="location.href='removeProfile.php'"; value="Poista profiili">
+<div>
+    <div>
+        <input id="muokkaaTietoja" type="submit" onclick="location.href='editProfile.php'"; value="Muokkaa tietoja">
+    </div>
+    <div>
+        <input id="vaihdaSalasana" type="submit" onclick="location.href='editPassword.php'"; value="Vaihda salasana">
+    </div>
+    <div>
+        <input id="poistaProfiili" type="submit" onclick="location.href='removeProfile.php'"; value="Poista profiili">
+    </div>
+</div>
 
 </body>
 <?php include("includes/ifooter.php");?>
