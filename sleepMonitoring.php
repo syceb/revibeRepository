@@ -5,10 +5,11 @@
 
 <h1 id="pageTitle" >Unen seuranta</h1>
   <article>
-  
+<!--Alasvetovalikko nukahtamisajalle -->
     <label for="sleep">Nukahtamisaika:</label>
     <input type="time" id="sleep" name="sleep" required>
     <br>
+<!--Alasvetovalikko heräämisajalle -->
     <label for="awake">Heräämisaika:</label>
     <input type="time" id="awake" name="awake" required>
 
