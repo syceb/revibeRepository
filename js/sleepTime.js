@@ -1,6 +1,6 @@
 document.getElementById("submitTime").onclick = timeCalc;
 
-
+//Kun uniaikasivuilta painetaan tallennusnappia, funktio laskee syötetyistä arvoista uniajan ja siirtää lasketun ajan takaisin unisivulle
 
 function timeCalc() {
 
