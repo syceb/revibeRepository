@@ -26,9 +26,6 @@
             <a href="graphicsReports" class="nav-link">Grafiikka ja raportit</a>
         </li>
         <li class="nav-item">
-            <a href="reminders" class="nav-link">Muistutukset</a>
-        </li>
-        <li class="nav-item">
             <a href="contactInfo" class="nav-link">Ota yhteyttä</a>
         </li>
         <li class="nav-item">

@@ -20,9 +20,3 @@
     <br>
     <input type="button" onclick="location.href='sleepMonitoring.php';" value="Lisää unitiedot" />
   </article>
-
-  <article>
-    <p> Muista nousta ylös ja liikkua työpäivän aikana </p>
-    <input type="button" onclick="location.href='reminders.php';" value="Lisää muistutus" />
-  </article>
-  
