@@ -36,9 +36,8 @@
     $currentUserID=$tulos1[0];
     ?>
 
+<!-- Tiedot kantaan unenmäärästä (keskeneräinen) -->
 <?php
-
-
 
 if(isset($_POST['submitTime'])){
    try {

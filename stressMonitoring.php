@@ -18,6 +18,8 @@
     $tulos1=$kysely1->fetch();
     $currentUserID=$tulos1[0];
     ?>
+
+ <!-- Tiedot kantaan -->   
 <?php
 if(isset($_POST['submitRecovery'])){
    try {
@@ -35,6 +37,8 @@ if(isset($_POST['submitRecovery'])){
   }
 ?>
   <h2 id="stressiotsikko">Stressipäiväkirja</h2>
+
+<!-- Tuodaan tiedot kannasta indexitaulukoksi sivulle -->  
 <?php
 $data3['commentUserID'] = $currentUserID;
 $sql3 = "SELECT commentText, commentPainLevel, commentDate FROM revibe_stressIndex WHERE commentUserID = :commentUserID ORDER BY commentDate DESC LIMIT 30";

@@ -1,7 +1,7 @@
 <?php include("includes/iheader.php");?>
 
 
-
+<!-- Tarkistetaan onko käyttäjä kirjautunut sisääm -->
 <?php
   if(!isset($_SESSION['sloggedIn'])){
    

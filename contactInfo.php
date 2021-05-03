@@ -64,6 +64,8 @@ input[type=text], select, textarea {
     $tulos1=$kysely1->fetch();
     $currentUserID=$tulos1[0];
     ?>
+
+<!-- Tiedot kantaan -->
 <?php
 if(isset($_POST['submitMessage'])){
    try {

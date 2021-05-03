@@ -2,7 +2,7 @@
 <?php include("includes/burgermenu.php");?>
 
 <?php include("forms/fremoveProfile.php"); 
-// määritetään ID 
+// mï¿½ï¿½ritetï¿½ï¿½n ID 
 $asd3=$_SESSION['suserID'];
 ?>
 
@@ -19,15 +19,15 @@ if ($conn->connect_error) {
 //Toimii kun deleteProfile nappi painettu
 if(isset($_POST['deleteProfile']))
  {
- //Poistetaan käyttäjä, jonka id on sama kuin ylempänä määritetty ID
+ //Poistetaan kÃ¤yttÃ¤jÃ¤, jonka id on sama kuin ylempÃ¤nÃ¤ mÃ¤Ã¤ritetty ID
     $sql= "DELETE FROM revibe_user WHERE userID = '$asd3'";
 
-//Jos käyttäjän ID ja määritetty ID on sama poistetaan profiilli
+//Jos kÃ¤yttÃ¤jÃ¤n ID ja mÃ¤Ã¤ritetty ID on sama poistetaan profiilli
 if ($conn->query($sql) === TRUE) {
   unset($_SESSION['sloggedIn']);
   header("Location: index.php");
 } else {
-//Error teksti, jos jostain syystä poisto ei onnistu
+//Error teksti, jos jostain syystï¿½ poisto ei onnistu
   echo "Error deleting record: " . $conn->error;
 }
 //Katkaistaan yhteys databaseen

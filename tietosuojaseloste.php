@@ -1,6 +1,8 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 
+<!-- Sovelluksen tietosuojaseloste -->
+
 <div class="tietosuoja">
 <h2><b>Tietosuojaseloste</b></h2>
 <h2>1. Rekisterinpitäjä</h2>

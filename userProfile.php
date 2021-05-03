@@ -1,7 +1,7 @@
 <?php include("includes/iheader.php");?>
 <?php include("includes/burgermenu.php");?>
 <?php
-//M��ritet��n nykeisen k�ytt�j�n email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
+//Määritetään nykeisen käyttäjän email, etunimi ja ID asd1, asd2 ja asd3 arvoiksi.
 $asd1=$_SESSION['suserEmail'];
 $asd2=$_SESSION['suserName'];
 $asd3=$_SESSION['suserID'];

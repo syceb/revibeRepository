@@ -17,20 +17,20 @@ if ($conn->connect_error) {
 //Odotetaan napin painallusta
 if(isset($_POST['changeInfo']))
  {
- //Määritetään tiedot
+ //MÃ¤Ã¤ritetÃ¤Ã¤n tiedot
     $fname=$_POST['givenName'];
     $lname=$_POST['givenSurname'];
     $email=$_POST['givenEmail'];
     $age=$_POST['givenAge'];
     $gender=$_POST['givenGender'];
-//Haetaan käyttäjän tiedot
+//Haetaan kÃ¤yttÃ¤jÃ¤n tiedot
     $select= "SELECT userID, userName, userSurname, userEmail, userAge, userGender FROM revibe_user WHERE userID = '$asd3'";
     $sql = mysqli_query($conn,$select);
     $row = mysqli_fetch_assoc($sql);
     $res= $row['userID'];
     if($res === $asd3)
     {
-//Päivitetään käyttäjän tiedot mikäli käyttäjän ID täsmää määritettyyn ID($asd3)   
+//PÃ¤ivitetÃ¤Ã¤n kÃ¤yttÃ¤jÃ¤n tiedot mikÃ¤li kÃ¤yttÃ¤jÃ¤n ID tÃ¤smÃ¤Ã¤ mÃ¤Ã¤ritettyyn ID($asd3)   
        $update = "UPDATE revibe_user SET userName='$fname', userSurname='$lname', userEmail='$email', userAge='$age', userGender='$gender' WHERE userID = '$asd3'";
        $sql2=mysqli_query($conn,$update);
 if($sql2)
@@ -48,7 +48,7 @@ if($sql2)
     else
     {
         /*sorry your id is not match*/
-        echo "Error";
+        echo "Virhe";
     }
  }
 ?>

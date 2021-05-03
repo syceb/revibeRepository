@@ -8,7 +8,7 @@
   <textarea class="stressMonitoring" rows = "4" cols = "50" placeholder = "Miten voit?" name = "givenDescription"></textarea>
   </p><p>
   
-  
+  <!-- Stressi-indexilomake -->
   </p><p><h1 class="stresstoday">Stressi tänään</h1>
   <select class="indexi" name="givenPain">
   <option value="1">Ei stressiä</option>
