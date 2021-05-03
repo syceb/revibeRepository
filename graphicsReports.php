@@ -6,6 +6,10 @@
 <h1 id="pageTitle" >Grafiikka ja raportit</h1>
 
 <br>
+
+
+<h1 id="stressih"> Stressi-indexi </h1>
+<br>
 <style>
 #chartdiv {
   width: 100%;
