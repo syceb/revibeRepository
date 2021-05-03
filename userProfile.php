@@ -46,5 +46,9 @@ $conn->close();
         <input class="removeProfile" id="poistaProfiili" onclick="location.href='removeProfile.php'"; value="Poista profiili">
     </div>
 </article>
+<br>
+<br>
+<br>
+<br>
 <?php include("includes/ifooter.php");?>
 </body>
